@@ -35,14 +35,6 @@ def songs():
             x2 = word(x1)
             split2 = x2.split()
             href123=combine(split2)
-
-
-
-
-
-            #df2.set_index('Song', inplace=True)
-
-
             m1='_('
             m='_song)'
             url2=url1+str(m1)+str(href123)+str(m)
@@ -94,6 +86,7 @@ def songs():
             i = i + 1
     df2.drop_duplicates(subset=None, keep='first', inplace=True)
     df2.fillna(0,inplace=True)
+    df2.set_index('Song', inplace=True)
     df2.to_csv('example.csv')
 
 
