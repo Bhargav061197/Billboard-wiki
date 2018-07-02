@@ -14,11 +14,11 @@ Python or PyCharm
 
 There are two ways you can run the program
 
-1. Using Pycharm
+## 1. Using Pycharm
 
 1.1 Just clone the project and Under new option in PyCharm , select this folder and you would be good to go .
 
-2. Using Basic Python 
+## 2. Using Basic Python 
 
 2.1 Install Pandas as 
 
@@ -44,7 +44,7 @@ pip install html5lib
 ```
 
 
-## Running the tests
+### Running the tests
 
 1. First set Dates in data.py as to from which date to whic date you want the billboard data for .
 2. Change the number by which i is divided .From this you can change intervals , as to once per 30 days if the number is 30
