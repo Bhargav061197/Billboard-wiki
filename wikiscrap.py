@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-url = 'https://en.wikipedia.org/wiki/Strangers_(Halsey_song)'
+url = 'https://en.wikipedia.org/wiki/Too_Good_at_Goodbyes'
 source_code = requests.get(url)
 plain_text = source_code.text
 soup = BeautifulSoup(plain_text,"html5lib")
@@ -36,10 +36,16 @@ def getproducer(soup):
 		if test.string=="Producer(s)":
 			sample=test.parent.parent.parent
 	under1=BeautifulSoup(str(sample),"html5lib")
+	c=0
 	if len(under1.findAll('li'))==0:
-		for x in under1.findAll('a'):
-		    if x.string!="Producer(s)":
-		    	print(x.string)
+         for x in under1.findAll('a'):
+            c+=1
+            if x.string!="Producer(s)":
+                print(x.string)
+         if c==1:
+             str1 = str(under1)
+             strx = (str1[str1.find("</span>") + 7:str1.find("</body>")]).strip()
+             print(strx)
 	else:
 	    for x in under1.findAll('li'):
 		    if x.a==None:
