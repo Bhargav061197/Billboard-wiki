@@ -14,34 +14,34 @@ Python or PyCharm
 
 There are two ways you can run the program
 
-   # 1. Using Pycharm
+1. Using PyCharm
 
          1.1 Just clone the project and Under new option in PyCharm , select this folder and you would be good to go .
 
-   # 2. Using Basic Python 
 
-         2.1 Install Pandas as 
+2. Using Basic Python 
+   
+   2.1 Install Pandas as 
 
-            ```
-            pip install pandas
+```
+pip install pandas
+```
+   2.2 Install Requests
 
-            ```
-         2.2 Install Requests
+```
+pip install Requests
+```
+   2.3  Install BeautifulSoup4
 
-           ```
-           pip install Requests
-           ```
-         2.3  Install BeautifulSoup4
-
-          ```
-          pip install beautifulsoup4
-
-          ```
-         2.4 Install html5lib
-          ```
-          pip install html5lib
-
-          ```
+```
+pip install beautifulsoup4
+```
+  
+   2.4 Install html5lib
+   
+```
+pip install html5lib
+```
 
 
 ### Running the tests
