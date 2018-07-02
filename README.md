@@ -37,6 +37,11 @@ pip install Requests
 pip install beautifulsoup4
 
 ```
+2.4 Install html5lib
+```
+pip install html5lib
+
+```
 
 
 ## Running the tests
