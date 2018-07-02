@@ -14,12 +14,14 @@ Python or PyCharm
 
 There are two ways you can run the program
 
-1. Using PyCharm
+# 1. Using PyCharm
 
    1.1 Just clone the project and Under new option in PyCharm , select this folder and you would be good to go .
 
 
-2. Using Basic Python 
+# 2. Using Basic Python 
+
+
    
    2.1 Install Pandas as 
 
