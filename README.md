@@ -9,6 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 ## Prerequisites
 
 Python or PyCharm
+###### Libraries
+panas , beautifulsoup4 , requests and html5lib
 
 ## Installing
 
