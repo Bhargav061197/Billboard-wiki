@@ -5,7 +5,7 @@ import csv as csv
 from date import date
 a=date()
 
-fw=open('Url.txt','w')
+
 def songs():
     df = pd.DataFrame({
         'Fake': [0]
@@ -47,8 +47,7 @@ def songs():
                     'Position': [i]
                 })
 
-                fw.write(url1)
-                fw.write('\n')
+                
                 df4=urlx(url1, x0, x2,df1)
 
 
@@ -62,8 +61,7 @@ def songs():
                         'Position': [i]
                     })
 
-                    fw.write(url2)
-                    fw.write('\n')
+                    
                     df4 = urlx(url2, x0, x2,df1)
 
 
@@ -78,8 +76,7 @@ def songs():
                             'Position': [i]
                         })
 
-                        fw.write(url3)
-                        fw.write('\n')
+                      
                         df4= urlx(url3,x0,x2,df1)
 
             df2 = pd.concat([df4, df2], ignore_index=True)
