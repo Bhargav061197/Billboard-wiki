@@ -1,6 +1,7 @@
 # Billboard-Wiki
 
 It scrapes song names and artists from billboard , the creates a valid Wikipedia link from that data for that particular song . The it extracts song writers and genres for all songs , creates a pandas dataframe and stores it as csv file
+Then using this data , any new song's popularity can be predicted based on the CSV file data
 
 ## Getting Started
 
@@ -53,4 +54,5 @@ pip install html5lib
 1. First set Dates in data.py as to from which date to whic date you want the billboard data for .
 2. Change the number by which i is divided .From this you can change intervals , as to once per 30 days if the number is 30
 3. Run main.py and then it will generate a csv file name example .csv
+4. Run the Scikit jupyter notebook file and any new song's popularity can be predicted using trained data
 
