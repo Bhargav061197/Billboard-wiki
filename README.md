@@ -1,7 +1,7 @@
 # Billboard-Wiki
 
 ## What it does 
-It scrapes song names and artists from billboard , the creates a valid Wikipedia link from that data for that particular song . Then it extracts song writers ,artists,song producers and genres for all songs , creates a pandas dataframe and stores it as csv file
+It scrapes song names and artists from billboard , the creates a valid Wikipedia link from that data for that particular song . Then it extracts song writers ,artists,song producers ,position and genres for all songs , creates a pandas dataframe and stores it as csv file
 Then using this data , any new song's popularity can be predicted based on the CSV file data .
 
 ## Getting Started
