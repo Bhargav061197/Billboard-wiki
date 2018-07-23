@@ -23,13 +23,15 @@ def songs():
 
 
         i = 1
-        for (link ,link12) in zip(soup.findAll("h2", {"class": "chart-row__song"}),soup.findAll(class_="chart-row__artist")): # zip method helps us perform multiple pararllel for loops .
+        for (link ,link12) in zip(soup.findAll("span", {"class": "chart-list-item__title-text"}),soup.findAll("div", {"class": "chart-list-item__artist"})): # zip method helps us perform multiple pararllel for loops .
             href = link.string  #song name
             href1 = href.split()
             word1=combine(href1)
             x0=combine2(href1)
             url1 = "https://en.wikipedia.org/wiki/" + str(word1)
             href12 = link12.string
+            if href12 is None:
+                href12 = link12.find('a').contents[0]
             split=href12.split()
             x1=combine2(split)
             x2 = word(x1)
